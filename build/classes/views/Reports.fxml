@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="821.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ReportsController">
+   <children>
+      <HBox alignment="CENTER" layoutX="14.0" layoutY="56.0" prefHeight="33.0" prefWidth="441.0" spacing="25.0">
+         <children>
+            <RadioButton fx:id="apptTypeRadioBtn" mnemonicParsing="false" onAction="#apptBtnPressed" text="Appointments by month" />
+            <RadioButton fx:id="contactSchedulesRadioBtn" mnemonicParsing="false" onAction="#contactBtnPressed" text="Contact schedules" />
+            <RadioButton fx:id="customerApptRadioBtn" mnemonicParsing="false" onAction="#customerApptBtnPressed" text="Customer  appt" />
+         </children>
+      </HBox>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="3.0" layoutY="23.0" prefHeight="21.0" prefWidth="814.0" text="Reports Main">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="backBtn" layoutX="746.0" layoutY="353.0" mnemonicParsing="false" onAction="#backBtnPressed" prefHeight="25.0" prefWidth="50.0" text="Back" />
+      <HBox alignment="CENTER" layoutX="14.0" layoutY="123.0" prefHeight="218.0" prefWidth="791.0">
+         <children>
+            <TextArea fx:id="textArea1" prefHeight="218.0" prefWidth="129.0" />
+            <TextArea fx:id="textArea2" nodeOrientation="LEFT_TO_RIGHT" prefHeight="218.0" prefWidth="129.0" />
+            <TextArea fx:id="textArea3" prefHeight="218.0" prefWidth="129.0" />
+            <TextArea fx:id="textArea4" prefHeight="218.0" prefWidth="129.0" />
+            <TextArea fx:id="textArea5" prefHeight="218.0" prefWidth="129.0" />
+            <TextArea fx:id="textArea6" prefHeight="218.0" prefWidth="129.0" />
+         </children>
+      </HBox>
+      <HBox layoutX="20.0" layoutY="102.0" prefHeight="21.0" prefWidth="776.0">
+         <children>
+            <Label fx:id="label1" alignment="CENTER" prefHeight="17.0" prefWidth="128.0" />
+            <Label fx:id="label2" alignment="CENTER" prefHeight="17.0" prefWidth="128.0" />
+            <Label fx:id="label3" alignment="CENTER" prefHeight="17.0" prefWidth="128.0" />
+            <Label fx:id="label4" alignment="CENTER" prefHeight="17.0" prefWidth="128.0" />
+            <Label fx:id="label5" alignment="CENTER" prefHeight="17.0" prefWidth="135.0" />
+            <Label fx:id="label6" alignment="CENTER" prefHeight="17.0" prefWidth="135.0" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

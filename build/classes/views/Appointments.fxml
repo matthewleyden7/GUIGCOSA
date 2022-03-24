@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="496.0" prefWidth="1087.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AppointmentsController">
+   <children>
+      <HBox alignment="CENTER" layoutX="15.0" layoutY="26.0" prefHeight="40.0" prefWidth="981.0">
+         <children>
+            <Label text="Appointment Management">
+               <font>
+                  <Font name="Arial" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="15.0" layoutY="76.0" prefHeight="27.0" prefWidth="831.0" spacing="25.0">
+         <children>
+            <RadioButton fx:id="allRadioBtn" mnemonicParsing="false" onAction="#allRadioBtnPressed" text="All appointments" />
+            <RadioButton fx:id="weekRadioBtn" mnemonicParsing="false" onAction="#weekRadioBtnPressed" text="This week" />
+            <RadioButton fx:id="monthRadioBtn" mnemonicParsing="false" onAction="#monthRadioBtnPressed" text="This month" />
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </HBox>
+      <HBox layoutX="15.0" layoutY="339.0" prefHeight="27.0" prefWidth="462.0" spacing="25.0">
+         <children>
+            <Button fx:id="addBtn" mnemonicParsing="false" onAction="#addBtnPressed" prefHeight="25.0" prefWidth="136.0" text="Add appointment" />
+            <Button fx:id="updateBtn" mnemonicParsing="false" onAction="#updateBtnPressed" prefHeight="25.0" prefWidth="136.0" text="Update appointment" />
+            <Button fx:id="deleteBtn" mnemonicParsing="false" onAction="#deleteBtnPressed" prefHeight="25.0" prefWidth="136.0" text="Delete appointment" />
+         </children>
+      </HBox>
+      <Button fx:id="backBtn" layoutX="942.0" layoutY="437.0" mnemonicParsing="false" onAction="#backBtnPressed" prefHeight="25.0" prefWidth="53.0" text="Back" />
+      <TableView fx:id="appointmentTable" layoutX="6.0" layoutY="117.0" prefHeight="200.0" prefWidth="1073.0">
+        <columns>
+          <TableColumn fx:id="idColumn" prefWidth="48.0" text="Appt ID" />
+          <TableColumn fx:id="titleColumn" prefWidth="102.0" text="Title" />
+            <TableColumn fx:id="descriptionColumn" prefWidth="75.0" text="Description" />
+            <TableColumn fx:id="locationColumn" prefWidth="75.0" text="Location" />
+            <TableColumn fx:id="typeColumn" prefWidth="105.0" text="Type" />
+            <TableColumn fx:id="customerIdColumn" prefWidth="53.0" text="Cust Id" />
+            <TableColumn fx:id="customerColumn" prefWidth="85.0" text="Customer" />
+            <TableColumn fx:id="contactIdColumn" prefWidth="66.0" text="Contact Id" />
+            <TableColumn fx:id="contactColumn" prefWidth="83.0" text="Contact" />
+            <TableColumn fx:id="startDateColumn" prefWidth="73.0" text="Start Date" />
+            <TableColumn fx:id="startTimeColumn" prefWidth="78.0" text="Start Time" />
+            <TableColumn fx:id="endDateColumn" minWidth="0.0" prefWidth="88.0" text="End Date" />
+            <TableColumn fx:id="endTimeColumn" minWidth="0.0" prefWidth="85.0" text="End Time" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
